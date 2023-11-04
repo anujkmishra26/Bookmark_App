@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://bookmarkapi.vercel.app";
+const API_BASE_URL = "VITE_API_BASE_URL";
 
 //Get all DOM elements
 const allBookmarks = document.querySelector(".all-bookmarks");
