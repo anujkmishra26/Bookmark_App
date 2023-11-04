@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Oswald:wght@500&display=swap');
+
+
+:root{
+    --color-nav-footer: rgb(240, 148, 223);
+    --color-primary: rgba(18, 227, 137, 0.921);
+    --color-secondary: #1433cf;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-nav-footer);
+}
+
+header a.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    color: black;
+    padding-left: 15px;
+}
+
+header a.logo img{
+    width: 50px;
+}
+
+header a.logo:hover{
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+header nav.social-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+header nav.social-links button{
+    padding: 7px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: rgb(59, 223, 59);
+}
+
+header nav.social-links button:hover{
+    padding: 10px 20px;
+    transition: all ease 0.2s;
+}
+
+header nav.social-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header nav.social-links a:hover{
+    color: var(--color-secondary);
+}
+
+/* main */
+main{
+    background-color: var(--color-primary);
+    padding: 20px;
+    min-height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* form to add new Bookmark */
+main input:not(input[type="submit"]){
+    padding: 7px;
+}
+
+main input[type="submit"]{
+    padding: 7px 15px;
+}
+
+main .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .form #bookmark-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+main .form input[type="submit"] {
+    width: 70px;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+main .form .input label{
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+main .form .input input {
+    font-size: 1.1rem;
+    min-width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+main .form .add-bookmark-error {
+    color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* search-container */
+.search-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 60px;
+}
+
+input#search-bookmark-input {
+    font-size: 1.1rem;
+    min-width: 250px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.search-container button {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* bookmarks-container */
+
+.bookmark-container {
+    padding: 20px 20px 60px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* loading-content */
+
+.loading-bookmarks {
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgba(80, 69, 69, 0.825);
+    border-radius: 50%;
+    border-top: 10px solid red;
+    animation: rotate 1s ease infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* .all-bookmarks p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: 600;
+} */
+
+main .all-bookmarks {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+main .ind-bookmark-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .ind-bookmark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+/* footer */
+footer {
+    background-color: var(--color-nav-footer);
+    padding: 17px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+
+footer a:hover {
+    transition: all ease 0.4s;
+    color: var(--color-secondary);
+}

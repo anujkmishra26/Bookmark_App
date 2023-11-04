@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bookmarks</title>
+    <link rel="stylesheet" href="./bookmarks.css">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">
+            <img src="../assets/logo.svg" alt="logo">
+            <span>Bookmark</span>
+        </a>
+        <nav class="social-links">
+            <div class="user-profile"></div>
+            <button id="logout-btn">Logout</button>
+            <a href="https://github.com/anujkmishra26" target="_blank">
+                Github
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <h1>Add New Bookmark</h1>
+            <form id="bookmark-form">
+                <div class="input">
+                    <label for="">Title</label>
+                    <input required type="text" id="title" placeholder="Title">
+                </div>
+                <div class="input">
+                    <label for="">URL</label>
+                    <input required type="url" id="url" placeholder="https://www.random-url.com">
+                </div>
+                <input type="submit" id="add-btn" value="Add">
+            </form>
+            <div class="add-bookmark-error">
+                <!-- Please fill correct information. -->
+            </div>
+        </div>
+        <div class="bookmark-container">
+            <h1>Bookmark</h1>
+            <form class="search-container">
+                <input type="search" id="search-bookmark-input" placeholder="Search Bookmark by title">
+                <button id="bookmark-search-btn" type="submit">Search</button>
+            </form>
+            <div class="all-bookmarks">
+                <div class="loading-bookmarks">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright © 2023 WebSolutions | From
+        <a href="https://github.com/anujkmishra26" target="_blank">
+            Anuj Kumar Mishra
+        </a>
+    </footer>
+
+    <script type="module" src="./bookmarks.js"></script>
+</body>
+
+</html>

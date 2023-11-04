@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+    <div id="reg">
+        <form id="login-form">
+            <h1>User Login</h1>
+            <input required type="email" id="email" placeholder="johndoe@email.com">
+            <input required type="password" id="password" placeholder="******">
+            <input type="submit" id="login-btn" value="Login">
+            <div id="error">
+                <!-- This is an error. -->
+            </div>
+            <div>
+                <p>Create New Account?
+                    <a href="./register.html">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    
+    <script type="module" src="./js/login.js"></script>
+
+</body>
+
+</html>

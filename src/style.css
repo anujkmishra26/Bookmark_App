@@ -1,0 +1,113 @@
+:root{
+  --color-nav-footer: pink;
+  --color-primary:  rgb(192, 255, 230);
+  --color-secondary: rgb(106, 42, 217);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-nav-footer);
+  /* color:white; */
+}
+
+header .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-left: 10px;
+  user-select: none;
+}
+
+header .logo img{
+  width: 50px;
+}
+
+header .logo:hover{
+  cursor: pointer;
+  color: var(--color-secondary);
+  transition: all ease 0.4s;
+}
+
+header nav.social-links a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  user-select: none;
+  padding-right: 10px;
+}
+
+header nav.social-links a:hover{
+  color: var(--color-secondary);
+  transition: all ease 0.4s;
+}
+
+/* Main */
+main{
+  padding: 10px;
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background-color: var(--color-primary);
+}
+
+main img{
+  width: 100px;
+}
+
+main p{
+  font-size: 1.2rem;
+}
+
+main a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+main button{
+  padding: 5px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: rgb(111, 179, 9);
+}
+
+/* Footer */
+
+footer{
+  background-color: var(--color-nav-footer);
+  padding: 17px;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline;
+}
+
+footer a:hover{
+  transition: all ease 0.4s;
+  color: var(--color-secondary);
+}
